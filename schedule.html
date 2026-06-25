@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule — Paddock Pulse</title>
+<meta name="description" content="The full 2026 Formula 1 race calendar, with completed rounds, sprint weekends, and the remaining schedule through Abu Dhabi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="telemetry-strip" aria-label="Live season ticker">
+  <div class="telemetry-track">
+    <span>21-ROUND 2026 CALENDAR · FIVE CONTINENTS</span><span class="sep">//</span>
+    <span>NEXT UP: AUSTRIAN GP · 26&ndash;28 JUNE</span><span class="sep">//</span>
+    <span>SIX SPRINT WEEKENDS THIS SEASON</span><span class="sep">//</span>
+    <span>21-ROUND 2026 CALENDAR · FIVE CONTINENTS</span><span class="sep">//</span>
+    <span>NEXT UP: AUSTRIAN GP · 26&ndash;28 JUNE</span><span class="sep">//</span>
+    <span>SIX SPRINT WEEKENDS THIS SEASON</span><span class="sep">//</span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg pp-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand pp-brand" href="index.html">
+      <span class="bolt">&#9889;</span>
+      <span>Paddock Pulse<small>Formula 1 Companion</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="drivers.html">Drivers</a></li>
+        <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+        <li class="nav-item"><a class="nav-link active" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <button class="theme-toggle" aria-label="Switch to light mode">&#9789;</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <header class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <p class="hero-kicker">2026 Calendar</p>
+      <h1 style="font-size:clamp(2.2rem,4.5vw,3.6rem);">21 rounds.<br>Five <em>continents</em>.</h1>
+      <p class="lead">The 2026 season runs from early March in Melbourne to the December finale in Abu Dhabi. Sprint weekends are marked with a lightning bolt.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="panel p-3 p-md-4">
+        <div class="table-responsive">
+          <table class="pp-table">
+            <thead>
+              <tr>
+                <th>Rd</th><th>Grand Prix</th><th>Circuit</th><th>Dates</th><th>Format</th><th>Winner</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row-done"><td class="text-mono">01</td><td><span class="flag">🇦🇺</span>Australian GP</td><td>Albert Park, Melbourne</td><td>6–8 Mar</td><td>Race</td><td>Russell</td></tr>
+              <tr class="row-done"><td class="text-mono">02</td><td><span class="flag">🇨🇳</span>Chinese GP</td><td>Shanghai International Circuit</td><td>13–15 Mar</td><td>&#9889; Sprint</td><td>Antonelli</td></tr>
+              <tr class="row-done"><td class="text-mono">03</td><td><span class="flag">🇯🇵</span>Japanese GP</td><td>Suzuka Circuit</td><td>27–29 Mar</td><td>Race</td><td>Antonelli</td></tr>
+              <tr class="row-done"><td class="text-mono">04</td><td><span class="flag">🇺🇸</span>Miami GP</td><td>Miami International Autodrome</td><td>1–3 May</td><td>&#9889; Sprint</td><td>Antonelli</td></tr>
+              <tr class="row-done"><td class="text-mono">05</td><td><span class="flag">🇨🇦</span>Canadian GP</td><td>Circuit Gilles Villeneuve</td><td>22–24 May</td><td>&#9889; Sprint</td><td>Antonelli</td></tr>
+              <tr class="row-done"><td class="text-mono">06</td><td><span class="flag">🇲🇨</span>Monaco GP</td><td>Circuit de Monaco</td><td>5–7 Jun</td><td>Race</td><td>Antonelli</td></tr>
+              <tr class="row-done"><td class="text-mono">07</td><td><span class="flag">🇪🇸</span>Barcelona-Catalunya GP</td><td>Circuit de Barcelona-Catalunya</td><td>12–14 Jun</td><td>Race</td><td>Hamilton</td></tr>
+              <tr style="background:rgba(226,36,27,.08);"><td class="text-mono">08</td><td><span class="flag">🇦🇹</span>Austrian GP</td><td>Red Bull Ring</td><td>26–28 Jun</td><td>Race</td><td class="text-mono" style="color:var(--red)">NEXT UP</td></tr>
+              <tr><td class="text-mono">09</td><td><span class="flag">🇬🇧</span>British GP</td><td>Silverstone Circuit</td><td>3–5 Jul</td><td>&#9889; Sprint</td><td>—</td></tr>
+              <tr><td class="text-mono">10</td><td><span class="flag">🇧🇪</span>Belgian GP</td><td>Circuit de Spa-Francorchamps</td><td>17–19 Jul</td><td>Race</td><td>—</td></tr>
+              <tr><td colspan="6" class="text-center text-dim small text-mono" style="letter-spacing:.1em;">— SUMMER BREAK —</td></tr>
+              <tr><td class="text-mono">11</td><td><span class="flag">🇳🇱</span>Dutch GP</td><td>Circuit Zandvoort</td><td>21–23 Aug</td><td>&#9889; Sprint</td><td>—</td></tr>
+              <tr><td class="text-mono">12</td><td><span class="flag">🇮🇹</span>Italian GP</td><td>Autodromo Nazionale Monza</td><td>4–6 Sep</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">13</td><td><span class="flag">🇪🇸</span>Spanish GP</td><td>Madring, Madrid</td><td>11–13 Sep</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">14</td><td><span class="flag">🇦🇿</span>Azerbaijan GP</td><td>Baku City Circuit</td><td>26 Sep</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">15</td><td><span class="flag">🇸🇬</span>Singapore GP</td><td>Marina Bay Street Circuit</td><td>9–11 Oct</td><td>&#9889; Sprint</td><td>—</td></tr>
+              <tr><td class="text-mono">16</td><td><span class="flag">🇺🇸</span>United States GP</td><td>Circuit of the Americas, Austin</td><td>23–25 Oct</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">17</td><td><span class="flag">🇲🇽</span>Mexico City GP</td><td>Autódromo Hermanos Rodríguez</td><td>30 Oct–1 Nov</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">18</td><td><span class="flag">🇧🇷</span>São Paulo GP</td><td>Autódromo José Carlos Pace</td><td>6–8 Nov</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">19</td><td><span class="flag">🇺🇸</span>Las Vegas GP</td><td>Las Vegas Strip Circuit</td><td>19–21 Nov</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">20</td><td><span class="flag">🇶🇦</span>Qatar GP</td><td>Lusail International Circuit</td><td>27–29 Nov</td><td>Race</td><td>—</td></tr>
+              <tr><td class="text-mono">21</td><td><span class="flag">🇦🇪</span>Abu Dhabi GP</td><td>Yas Marina Circuit</td><td>4–6 Dec</td><td>Race</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-5">
+        <div class="col-md-4">
+          <div class="data-card" style="--team-color:#F2B705">
+            <span class="num-plate">6</span>
+            <h3>Sprint weekends</h3>
+            <p class="text-dim small mb-0">China, Miami, Canada, Great Britain, the Netherlands, and Singapore each add a Saturday sprint race and its own points.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="data-card" style="--team-color:#8B5CF6">
+            <span class="num-plate">NEW</span>
+            <h3>Madrid joins the calendar</h3>
+            <p class="text-dim small mb-0">The Spanish Grand Prix moves to a new street circuit in Madrid, while Barcelona-Catalunya keeps its June date under its own name.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="data-card" style="--team-color:#2BB673">
+            <span class="num-plate">22→21</span>
+            <h3>A shorter season</h3>
+            <p class="text-dim small mb-0">Bahrain and Saudi Arabia were removed from the calendar this year, trimming the schedule and reshaping the run to the finale.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pp-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="pp-brand mb-2"><span class="bolt">&#9889;</span><span>Paddock Pulse</span></div>
+        <p class="small mb-0">An independent fan project covering the 2026 Formula 1 World Championship. Not affiliated with Formula 1, the FIA, or any team.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Explore</h5>
+        <ul class="list-unstyled d-grid gap-2 mt-3">
+          <li><a href="drivers.html">Drivers</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>More</h5>
+        <ul class="list-unstyled d-grid gap-2 mt-3">
+          <li><a href="news.html">News</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Stay in the loop</h5>
+        <p class="small">Have a tip, correction, or a question about the season? Reach out via the contact page.</p>
+        <a href="contact.html" class="btn btn-pp btn-pp-red">Contact us</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; <span data-year></span> Paddock Pulse. Built for educational purposes.</span>
+      <span>All times shown in local circuit time.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

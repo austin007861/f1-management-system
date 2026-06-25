@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teams — Paddock Pulse</title>
+<meta name="description" content="All 11 constructors on the 2026 Formula 1 grid, including new entrants Audi and Cadillac, with current standings and engine suppliers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="telemetry-strip" aria-label="Live season ticker">
+  <div class="telemetry-track">
+    <span>11 CONSTRUCTORS ON THE 2026 GRID</span><span class="sep">//</span>
+    <span>MERCEDES LEAD BY 72 PTS OVER FERRARI</span><span class="sep">//</span>
+    <span>WELCOME TO THE GRID: AUDI &amp; CADILLAC</span><span class="sep">//</span>
+    <span>11 CONSTRUCTORS ON THE 2026 GRID</span><span class="sep">//</span>
+    <span>MERCEDES LEAD BY 72 PTS OVER FERRARI</span><span class="sep">//</span>
+    <span>WELCOME TO THE GRID: AUDI &amp; CADILLAC</span><span class="sep">//</span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg pp-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand pp-brand" href="index.html">
+      <span class="bolt">&#9889;</span>
+      <span>Paddock Pulse<small>Formula 1 Companion</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="drivers.html">Drivers</a></li>
+        <li class="nav-item"><a class="nav-link active" href="teams.html">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <button class="theme-toggle" aria-label="Switch to light mode">&#9789;</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <header class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <p class="hero-kicker">Constructors</p>
+      <h1 style="font-size:clamp(2.2rem,4.5vw,3.6rem);">11 garages.<br>One <em>grid</em>.</h1>
+      <p class="lead">From Mercedes' early-season dominance to Cadillac's debut campaign, here's where every constructor stands after Round 7.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="filter-bar" data-filter-bar="#teamGrid" role="group" aria-label="Filter teams by status">
+        <button class="chip active" data-filter-value="all">All Teams</button>
+        <button class="chip" data-filter-value="top">Top 5</button>
+        <button class="chip" data-filter-value="midfield">Midfield</button>
+        <button class="chip" data-filter-value="new">New for 2026</button>
+      </div>
+
+      <div class="row g-4" id="teamGrid">
+
+        <div class="col-md-6 col-lg-4" data-filter-key="top">
+          <div class="data-card" style="--team-color:#27F4D2">
+            <span class="num-plate">01</span>
+            <h3>Mercedes</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#27F4D2"></span>Power unit: Mercedes</span>
+            <div class="stat-row"><span>Drivers</span><b>Antonelli / Russell</b></div>
+            <div class="stat-row"><span>Points</span><b>262</b></div>
+            <div class="stat-row"><span>Wins</span><b>6</b></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="top">
+          <div class="data-card" style="--team-color:#E80020">
+            <span class="num-plate">02</span>
+            <h3>Ferrari</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#E80020"></span>Power unit: Ferrari</span>
+            <div class="stat-row"><span>Drivers</span><b>Hamilton / Leclerc</b></div>
+            <div class="stat-row"><span>Points</span><b>190</b></div>
+            <div class="stat-row"><span>Wins</span><b>1</b></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="top">
+          <div class="data-card" style="--team-color:#FF8000">
+            <span class="num-plate">03</span>
+            <h3>McLaren</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#FF8000"></span>Power unit: Mercedes</span>
+            <div class="stat-row"><span>Drivers</span><b>Norris / Piastri</b></div>
+            <div class="stat-row"><span>Points</span><b>168</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+            <p class="text-dim small mt-2 mb-0">Reigning back-to-back Constructors' Champions, chasing a third straight title.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="top midfield">
+          <div class="data-card" style="--team-color:#1E5BC6">
+            <span class="num-plate">04</span>
+            <h3>Red Bull Racing</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#1E5BC6"></span>Power unit: Red Bull Ford</span>
+            <div class="stat-row"><span>Drivers</span><b>Verstappen / Hadjar</b></div>
+            <div class="stat-row"><span>Points</span><b>102</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="midfield">
+          <div class="data-card" style="--team-color:#00665E">
+            <span class="num-plate">05</span>
+            <h3>Aston Martin</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#00665E"></span>Power unit: Honda</span>
+            <div class="stat-row"><span>Drivers</span><b>Alonso / Stroll</b></div>
+            <div class="stat-row"><span>Points</span><b>35</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+            <p class="text-dim small mt-2 mb-0">Now a full Honda works team, with Adrian Newey's influence shaping the 2026 car.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="midfield">
+          <div class="data-card" style="--team-color:#00A1E8">
+            <span class="num-plate">06</span>
+            <h3>Alpine</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#00A1E8"></span>Power unit: Mercedes</span>
+            <div class="stat-row"><span>Drivers</span><b>Gasly / Colapinto</b></div>
+            <div class="stat-row"><span>Points</span><b>34</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="midfield">
+          <div class="data-card" style="--team-color:#1868DB">
+            <span class="num-plate">07</span>
+            <h3>Williams</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#1868DB"></span>Power unit: Mercedes</span>
+            <div class="stat-row"><span>Drivers</span><b>Albon / Sainz</b></div>
+            <div class="stat-row"><span>Points</span><b>33</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="midfield">
+          <div class="data-card" style="--team-color:#6C98FF">
+            <span class="num-plate">08</span>
+            <h3>Racing Bulls</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#6C98FF"></span>Power unit: Red Bull Ford</span>
+            <div class="stat-row"><span>Drivers</span><b>Lawson / Lindblad</b></div>
+            <div class="stat-row"><span>Points</span><b>11</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+            <p class="text-dim small mt-2 mb-0">Red Bull's development squad, giving rookie Lindblad his F1 debut season.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="midfield">
+          <div class="data-card" style="--team-color:#B6BABD">
+            <span class="num-plate">09</span>
+            <h3>Haas</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#B6BABD"></span>Power unit: Ferrari</span>
+            <div class="stat-row"><span>Drivers</span><b>Ocon / Bearman</b></div>
+            <div class="stat-row"><span>Points</span><b>4</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="new">
+          <div class="data-card" style="--team-color:#BB0A30">
+            <span class="num-plate">10</span>
+            <h3>Audi</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#BB0A30"></span>Power unit: Audi</span>
+            <div class="stat-row"><span>Drivers</span><b>Hülkenberg / Bortoleto</b></div>
+            <div class="stat-row"><span>Points</span><b>1</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+            <p class="text-dim small mt-2 mb-0">Formerly Sauber, now a full Audi works constructor building its own power unit in-house.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-filter-key="new">
+          <div class="data-card" style="--team-color:#FFD100">
+            <span class="num-plate">11</span>
+            <h3>Cadillac</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#FFD100"></span>Power unit: Ferrari (interim)</span>
+            <div class="stat-row"><span>Drivers</span><b>Pérez / Bottas</b></div>
+            <div class="stat-row"><span>Points</span><b>0</b></div>
+            <div class="stat-row"><span>Wins</span><b>0</b></div>
+            <p class="text-dim small mt-2 mb-0">Formula 1's first new team since 2016, backed by General Motors. A GM-built power unit is planned for 2029.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pp-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="pp-brand mb-2"><span class="bolt">&#9889;</span><span>Paddock Pulse</span></div>
+        <p class="small mb-0">An independent fan project covering the 2026 Formula 1 World Championship. Not affiliated with Formula 1, the FIA, or any team.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Explore</h5>
+        <ul class="list-unstyled d-grid gap-2 mt-3">
+          <li><a href="drivers.html">Drivers</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>More</h5>
+        <ul class="list-unstyled d-grid gap-2 mt-3">
+          <li><a href="news.html">News</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Stay in the loop</h5>
+        <p class="small">Have a tip, correction, or a question about the season? Reach out via the contact page.</p>
+        <a href="contact.html" class="btn btn-pp btn-pp-red">Contact us</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; <span data-year></span> Paddock Pulse. Built for educational purposes.</span>
+      <span>All times shown in local circuit time.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

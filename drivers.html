@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drivers — Paddock Pulse</title>
+<meta name="description" content="Every driver on the 2026 Formula 1 grid, with current standings position, team, and car number. Filter by team.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<div class="telemetry-strip" aria-label="Live season ticker">
+  <div class="telemetry-track">
+    <span>22 DRIVERS · 11 TEAMS · 1 CHAMPIONSHIP</span><span class="sep">//</span>
+    <span>K. ANTONELLI LEADS BY 41 POINTS</span><span class="sep">//</span>
+    <span>ROOKIE WATCH: A. LINDBLAD, RACING BULLS</span><span class="sep">//</span>
+    <span>22 DRIVERS · 11 TEAMS · 1 CHAMPIONSHIP</span><span class="sep">//</span>
+    <span>K. ANTONELLI LEADS BY 41 POINTS</span><span class="sep">//</span>
+    <span>ROOKIE WATCH: A. LINDBLAD, RACING BULLS</span><span class="sep">//</span>
+  </div>
+</div>
+
+<nav class="navbar navbar-expand-lg pp-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand pp-brand" href="index.html">
+      <span class="bolt">&#9889;</span>
+      <span>Paddock Pulse<small>Formula 1 Companion</small></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain" aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMain">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="drivers.html">Drivers</a></li>
+        <li class="nav-item"><a class="nav-link" href="teams.html">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+          <button class="theme-toggle" aria-label="Switch to light mode">&#9789;</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main id="main">
+
+  <header class="hero" style="padding-bottom:2.5rem;">
+    <div class="container">
+      <p class="hero-kicker">2026 Grid</p>
+      <h1 style="font-size:clamp(2.2rem,4.5vw,3.6rem);">22 drivers.<br>One <em>standings</em> table.</h1>
+      <p class="lead">Standings reflect points after Round 7, the Barcelona-Catalunya Grand Prix. Use the filters below to jump straight to a team's pairing.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+
+      <div class="filter-bar" data-filter-bar="#driverGrid" role="group" aria-label="Filter drivers by team">
+        <button class="chip active" data-filter-value="all">All Teams</button>
+        <button class="chip" data-filter-value="mercedes">Mercedes</button>
+        <button class="chip" data-filter-value="ferrari">Ferrari</button>
+        <button class="chip" data-filter-value="mclaren">McLaren</button>
+        <button class="chip" data-filter-value="redbull">Red Bull</button>
+        <button class="chip" data-filter-value="astonmartin">Aston Martin</button>
+        <button class="chip" data-filter-value="alpine">Alpine</button>
+        <button class="chip" data-filter-value="williams">Williams</button>
+        <button class="chip" data-filter-value="racingbulls">Racing Bulls</button>
+        <button class="chip" data-filter-value="haas">Haas</button>
+        <button class="chip" data-filter-value="audi">Audi</button>
+        <button class="chip" data-filter-value="cadillac">Cadillac</button>
+      </div>
+
+      <div class="row g-4" id="driverGrid">
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="mercedes">
+          <div class="data-card" style="--team-color:#27F4D2">
+            <span class="num-plate">12</span>
+            <h3>Kimi Antonelli</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#27F4D2"></span>Mercedes</span>
+            <div class="stat-row"><span>Standing</span><b>1st</b></div>
+            <div class="stat-row"><span>Points</span><b>156</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="mercedes">
+          <div class="data-card" style="--team-color:#27F4D2">
+            <span class="num-plate">63</span>
+            <h3>George Russell</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#27F4D2"></span>Mercedes</span>
+            <div class="stat-row"><span>Standing</span><b>3rd</b></div>
+            <div class="stat-row"><span>Points</span><b>106</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="ferrari">
+          <div class="data-card" style="--team-color:#E80020">
+            <span class="num-plate">44</span>
+            <h3>Lewis Hamilton</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#E80020"></span>Ferrari</span>
+            <div class="stat-row"><span>Standing</span><b>2nd</b></div>
+            <div class="stat-row"><span>Points</span><b>115</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="ferrari">
+          <div class="data-card" style="--team-color:#E80020">
+            <span class="num-plate">16</span>
+            <h3>Charles Leclerc</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#E80020"></span>Ferrari</span>
+            <div class="stat-row"><span>Standing</span><b>6th</b></div>
+            <div class="stat-row"><span>Points</span><b>75</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="mclaren">
+          <div class="data-card" style="--team-color:#FF8000">
+            <span class="num-plate">4</span>
+            <h3>Lando Norris</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#FF8000"></span>McLaren</span>
+            <div class="stat-row"><span>Standing</span><b>4th</b></div>
+            <div class="stat-row"><span>Points</span><b>89</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="mclaren">
+          <div class="data-card" style="--team-color:#FF8000">
+            <span class="num-plate">81</span>
+            <h3>Oscar Piastri</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#FF8000"></span>McLaren</span>
+            <div class="stat-row"><span>Standing</span><b>5th</b></div>
+            <div class="stat-row"><span>Points</span><b>79</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="redbull">
+          <div class="data-card" style="--team-color:#1E5BC6">
+            <span class="num-plate">3</span>
+            <h3>Max Verstappen</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#1E5BC6"></span>Red Bull Racing</span>
+            <div class="stat-row"><span>Standing</span><b>7th</b></div>
+            <div class="stat-row"><span>Points</span><b>64</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="redbull">
+          <div class="data-card" style="--team-color:#1E5BC6">
+            <span class="num-plate">6</span>
+            <h3>Isack Hadjar</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#1E5BC6"></span>Red Bull Racing</span>
+            <div class="stat-row"><span>Standing</span><b>8th</b></div>
+            <div class="stat-row"><span>Points</span><b>38</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="alpine">
+          <div class="data-card" style="--team-color:#00A1E8">
+            <span class="num-plate">10</span>
+            <h3>Pierre Gasly</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#00A1E8"></span>Alpine</span>
+            <div class="stat-row"><span>Standing</span><b>9th</b></div>
+            <div class="stat-row"><span>Points</span><b>30</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="alpine">
+          <div class="data-card" style="--team-color:#00A1E8">
+            <span class="num-plate">43</span>
+            <h3>Franco Colapinto</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#00A1E8"></span>Alpine</span>
+            <div class="stat-row"><span>Standing</span><b>15th</b></div>
+            <div class="stat-row"><span>Points</span><b>4</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="astonmartin">
+          <div class="data-card" style="--team-color:#00665E">
+            <span class="num-plate">14</span>
+            <h3>Fernando Alonso</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#00665E"></span>Aston Martin</span>
+            <div class="stat-row"><span>Standing</span><b>10th</b></div>
+            <div class="stat-row"><span>Points</span><b>24</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="astonmartin">
+          <div class="data-card" style="--team-color:#00665E">
+            <span class="num-plate">18</span>
+            <h3>Lance Stroll</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#00665E"></span>Aston Martin</span>
+            <div class="stat-row"><span>Standing</span><b>13th</b></div>
+            <div class="stat-row"><span>Points</span><b>11</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="williams">
+          <div class="data-card" style="--team-color:#1868DB">
+            <span class="num-plate">23</span>
+            <h3>Alex Albon</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#1868DB"></span>Williams</span>
+            <div class="stat-row"><span>Standing</span><b>11th</b></div>
+            <div class="stat-row"><span>Points</span><b>19</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="williams">
+          <div class="data-card" style="--team-color:#1868DB">
+            <span class="num-plate">55</span>
+            <h3>Carlos Sainz</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#1868DB"></span>Williams</span>
+            <div class="stat-row"><span>Standing</span><b>12th</b></div>
+            <div class="stat-row"><span>Points</span><b>14</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="racingbulls">
+          <div class="data-card" style="--team-color:#6C98FF">
+            <span class="num-plate">30</span>
+            <h3>Liam Lawson</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#6C98FF"></span>Racing Bulls</span>
+            <div class="stat-row"><span>Standing</span><b>14th</b></div>
+            <div class="stat-row"><span>Points</span><b>8</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="racingbulls">
+          <div class="data-card" style="--team-color:#6C98FF">
+            <span class="num-plate">41</span>
+            <h3>Arvid Lindblad</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#6C98FF"></span>Racing Bulls</span>
+            <div class="stat-row"><span>Standing</span><b>16th</b></div>
+            <div class="stat-row"><span>Points</span><b>3</b></div>
+            <p class="text-dim small mt-2 mb-0">Rookie — F1's only debutant on the 2026 grid.</p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="haas">
+          <div class="data-card" style="--team-color:#B6BABD">
+            <span class="num-plate">31</span>
+            <h3>Esteban Ocon</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#B6BABD"></span>Haas</span>
+            <div class="stat-row"><span>Standing</span><b>17th</b></div>
+            <div class="stat-row"><span>Points</span><b>2</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="haas">
+          <div class="data-card" style="--team-color:#B6BABD">
+            <span class="num-plate">87</span>
+            <h3>Oliver Bearman</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#B6BABD"></span>Haas</span>
+            <div class="stat-row"><span>Standing</span><b>18th</b></div>
+            <div class="stat-row"><span>Points</span><b>2</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="audi">
+          <div class="data-card" style="--team-color:#BB0A30">
+            <span class="num-plate">27</span>
+            <h3>Nico Hülkenberg</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#BB0A30"></span>Audi</span>
+            <div class="stat-row"><span>Standing</span><b>19th</b></div>
+            <div class="stat-row"><span>Points</span><b>1</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="audi">
+          <div class="data-card" style="--team-color:#BB0A30">
+            <span class="num-plate">5</span>
+            <h3>Gabriel Bortoleto</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#BB0A30"></span>Audi</span>
+            <div class="stat-row"><span>Standing</span><b>20th</b></div>
+            <div class="stat-row"><span>Points</span><b>0</b></div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4" data-filter-key="cadillac">
+          <div class="data-card" style="--team-color:#FFD100">
+            <span class="num-plate">11</span>
+            <h3>Sergio Pérez</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#FFD100"></span>Cadillac</span>
+            <div class="stat-row"><span>Standing</span><b>21st</b></div>
+            <div class="stat-row"><span>Points</span><b>0</b></div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4" data-filter-key="cadillac">
+          <div class="data-card" style="--team-color:#FFD100">
+            <span class="num-plate">77</span>
+            <h3>Valtteri Bottas</h3>
+            <span class="team-tag"><span class="swatch-dot" style="--team-color:#FFD100"></span>Cadillac</span>
+            <div class="stat-row"><span>Standing</span><b>22nd</b></div>
+            <div class="stat-row"><span>Points</span><b>0</b></div>
+            <p class="text-dim small mt-2 mb-0">Part of Formula 1's first all-American constructor entry.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pp-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="pp-brand mb-2"><span class="bolt">&#9889;</span><span>Paddock Pulse</span></div>
+        <p class="small mb-0">An independent fan project covering the 2026 Formula 1 World Championship. Not affiliated with Formula 1, the FIA, or any team.</p>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>Explore</h5>
+        <ul class="list-unstyled d-grid gap-2 mt-3">
+          <li><a href="drivers.html">Drivers</a></li>
+          <li><a href="teams.html">Teams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-2 col-6">
+        <h5>More</h5>
+        <ul class="list-unstyled d-grid gap-2 mt-3">
+          <li><a href="news.html">News</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Stay in the loop</h5>
+        <p class="small">Have a tip, correction, or a question about the season? Reach out via the contact page.</p>
+        <a href="contact.html" class="btn btn-pp btn-pp-red">Contact us</a>
+      </div>
+    </div>
+    <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+      <span>&copy; <span data-year></span> Paddock Pulse. Built for educational purposes.</span>
+      <span>All times shown in local circuit time.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
